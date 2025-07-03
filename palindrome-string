@@ -1,0 +1,11 @@
+let s1 = "malayalam";
+let s2 = "";
+for (let i = s1.length; i >= 0; i--)
+{
+  s2 += s1.charAt(i);
+}
+
+if (s1 == s2)
+  console.log("Palindrome");
+else
+  console.log("Not Palindrome");
