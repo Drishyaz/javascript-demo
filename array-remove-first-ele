@@ -1,0 +1,11 @@
+let ar = [10,20,30];
+delete ar[0];
+let a = ar.filter(val => val != ar[0])
+// filter() will keep only those items of the array which is not the first element which is ar[0]
+console.log(a);
+
+// Output - [20,30]
+
+// using shift() - removes and modifies within the original array itself
+ar.shift();
+console.log(ar);
