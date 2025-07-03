@@ -1,9 +1,15 @@
 let ar = [10,50,100,2,0];
+
+// using fundamental logic
 for (let i=1;i<ar.length;i++)
 {
     if (ar[i] > l) 
       l = ar[i];
 }
+console.log(l);
+
+// using spread operator (...) and Math.max()
+let l = Math.max(...ar);
 console.log(l);
 
 // Output - 100
