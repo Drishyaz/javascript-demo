@@ -1,0 +1,19 @@
+// longest word
+const longest_word = (sentence) => 
+{
+    let words = sentence.split(" ");
+    let count = 0;
+    for (let i=0; i<words.length; i++)
+    {
+        let word_len = words[i].length;
+        if (word_len > count)
+        {
+            count += word_len;
+            longest = words[i];
+        }
+    }
+    return longest;
+}
+
+let sentence = "The quick brown fox jumped over the lazy dog";
+console.log(longest_word(sentence));
