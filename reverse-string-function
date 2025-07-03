@@ -1,0 +1,7 @@
+let s1 = "hello";
+let s2 = "";
+s2 = s1.split("").reverse().join("");
+console.log("Reverse of " + s1 + " is " + s2);
+
+// Input - "hello"
+// Output - Reverse of hello is olleh
